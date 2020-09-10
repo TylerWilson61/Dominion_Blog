@@ -16,8 +16,8 @@
 
     </div>
 
-    <button v-on:click="check_login"> login </button>
-    <button v-on:click="check_register"> register </button>
+    <button id = "login_btn" v-on:click="check_login"> login </button>
+    <button id = "register_btn" v-on:click="check_register"> register </button>
     
     <div id = "server-msgs">
       <p v-if="login_failed_pswd">Incorrect username or password. Please try again or register an account.</p>
@@ -31,10 +31,6 @@
 </template>
 
 <script>
-
-//display msg on register fail/success
-//route to hom on login success
-//display msg on login fail
 import axios from 'axios'
 export default {
   name: 'login_content',

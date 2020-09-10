@@ -29,8 +29,6 @@
 
 <script>
 import axios from 'axios'
-//provide text box for adding comments
-//on create loop through comments with this postID and add them to the page
 export default {
     
 
@@ -39,7 +37,7 @@ export default {
         return {
             comments: [],
             id: "",
-            postId: this.$route.params.id,
+            postId: "",
             content: "",
             author: ""
 
@@ -54,6 +52,7 @@ export default {
 
 
         load_comments: function () {
+        this.postId = this.$route.params.id
         axios.get("http://localhost:3000/comments/?postId=" + this.postId)
         .then((response) => {
             this.comments = response["data"]

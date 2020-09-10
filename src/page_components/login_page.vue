@@ -12,12 +12,8 @@
 
 
 <script>
-//todo
-//create cookies
-//process login/registration
 import login_content from '../components/login_content'
-// import axios from 'axios';
-// console.log(axios.get("http://localhost:3000/comments"))
+
 
 
 export default {

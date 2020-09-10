@@ -12,18 +12,20 @@ note: must run json-server and vue app in parallel on local machine
 
 ## run the server
 ```
-json-server db.json
+json-server db.json --watch
 ```
 
-### Compiles and hot-reloads for development
+### Compiling and Unit Tests
 ```
-compile vue app using cli:
-
+compile and run vue app using cli:
 npm run serve
 
 
-compile vue using gui:
+run unit tests:
+npm run test:unit
 
+
+cli command to create Vue UI (serve in ui):
 vue ui
 
 ```
