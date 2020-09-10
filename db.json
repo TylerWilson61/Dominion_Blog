@@ -1,0 +1,151 @@
+{
+  "posts": [
+    {
+      "title": "how to make pie",
+      "content": "1 apples 2 bake 3 enjoy",
+      "author": "tyler",
+      "id": 2
+    },
+    {
+      "title": "how to bake bread",
+      "content": "just score the bastard and put it in the oven, raw and all",
+      "author": "tyler",
+      "id": 3
+    },
+    {
+      "title": "how to bread",
+      "content": "bake",
+      "author": "tyler",
+      "id": 4
+    },
+    {
+      "title": "how to fish",
+      "content": "cut and cook",
+      "author": "tyler",
+      "id": 5
+    },
+    {
+      "title": "how to veggie",
+      "content": "stir fry",
+      "author": "tyler",
+      "id": 6
+    },
+    {
+      "title": "how to dj",
+      "content": "spin records",
+      "author": "tyler",
+      "id": 7
+    },
+    {
+      "title": "how to drink",
+      "content": "water",
+      "author": "tyler",
+      "id": 8
+    },
+    {
+      "title": "how to onion",
+      "content": "cut",
+      "author": "tyler",
+      "id": 9
+    },
+    {
+      "title": "how to carrot",
+      "content": "glaze",
+      "author": "tyler",
+      "id": 10
+    },
+    {
+      "title": "flowers",
+      "content": "just water",
+      "author": "tyler",
+      "id": 11
+    },
+    {
+      "title": "hike",
+      "content": "bring boots",
+      "author": "tyler",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": "9",
+      "body": "thats not how u cut an onion.....",
+      "author": "gina"
+    },
+    {
+      "id": 2,
+      "postId": "12",
+      "body": "its a little bit more comlicated that that buddy...",
+      "author": "zetabb"
+    },
+    {
+      "id": 3,
+      "postId": "12",
+      "body": "nice blog",
+      "author": "a"
+    },
+    {
+      "id": 4,
+      "postId": "11",
+      "body": "also sunlight",
+      "author": "sav"
+    },
+    {
+      "id": 5,
+      "postId": "11",
+      "body": "also dirt",
+      "author": "sav"
+    },
+    {
+      "id": 6,
+      "postId": "11",
+      "body": "and some grass maybe?",
+      "author": "sav"
+    },
+    {
+      "id": 7,
+      "postId": "12",
+      "body": "might want a protein bar too",
+      "author": "monkey"
+    }
+  ],
+  "profile": [
+    {
+      "name": "tyler",
+      "password": "kangaroo",
+      "id": 1
+    },
+    {
+      "name": "michael",
+      "password": "pokemon",
+      "id": 2
+    },
+    {
+      "name": "sav",
+      "password": "hat",
+      "id": 3
+    },
+    {
+      "name": "gina",
+      "password": "yeet",
+      "id": 4
+    },
+    {
+      "name": "zetabb",
+      "password": "hehe",
+      "id": 5
+    },
+    {
+      "name": "a",
+      "password": "a",
+      "id": 6
+    },
+    {
+      "name": "monkey",
+      "password": "bb",
+      "id": 7
+    }
+  ]
+}
