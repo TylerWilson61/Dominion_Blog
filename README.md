@@ -4,9 +4,8 @@
 ## Project setup
 ```
 npm install
-npm install axios
-npm install vue
-npm install json-server
+npm install --save vue vue-router json-server axios cookies
+npm install --save-dev @vue/test-utils vue-jest
 
 note: must run json-server and vue app in parallel on local machine
 ```
@@ -26,17 +25,9 @@ npm run serve
 compile vue using gui:
 
 vue ui
+
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
