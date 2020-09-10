@@ -73,20 +73,23 @@ export default {
             }
             this.author = window.$cookies.get("author")
             document.getElementById("new_comment").value = ""
+            this.get_id()
+        },
 
-
+        get_id: function () {
             axios.get('http://localhost:3000/comments')
             .then((response) => {
                 this.id = response["data"].length + 1
-       
+                console.log('new posts id:', this.id)
+                this.send_post()
             })
             .catch((error) =>{
                 console.log(error)
             })
+        },
 
-
-
-            axios.post("http://localhost:3000/comments/?postId=" + this.postId, {
+        send_post: function () {
+            axios.post("http://localhost:3000/comments/", {
                 id:this.id,
                 postId:this.postId,
                 body:this.content,
@@ -98,8 +101,15 @@ export default {
             })
             .catch((error) => {
                 console.log(error)
+                console.log('heres what got sent: ', this.id)
             })
         }
+        
+        
+
+
+            
+        
     }
     
 }
