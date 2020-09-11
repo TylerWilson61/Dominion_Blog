@@ -4,7 +4,7 @@
 ## Project setup
 ```
 npm i --save json-server (note: add <sudo> to command if permission denied)
-npm i --save vue vue-router axis cookies
+npm i --save vue vue-router axios cookies
 npm i -D @vue/test-utils vue-jest
 
 note: must have Node.js installed to use npm
