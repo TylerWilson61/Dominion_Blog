@@ -79,7 +79,6 @@ export default {
             axios.get('http://localhost:3000/comments')
             .then((response) => {
                 this.id = response["data"].length + 1
-                console.log('new posts id:', this.id)
                 this.send_post()
             })
             .catch((error) =>{
@@ -100,7 +99,6 @@ export default {
             })
             .catch((error) => {
                 console.log(error)
-                console.log('heres what got sent: ', this.id)
             })
         }
         

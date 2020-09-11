@@ -24,6 +24,7 @@
       <p v-if="login_failed_usnm">This user does not exist. Please register an account.</p>
       <p v-if="register_failed">This username already exists. Please try another.</p>
       <p v-if="register_verified">Success! You can now log in with your account.</p>
+      <p v-if="no_input">Please type in a username and password to login or register.</p>
     </div>
   </div>
    
@@ -45,6 +46,7 @@ export default {
         login_failed_usnm:false,
         register_failed:false,
         register_verified:false,
+        no_input:false,
         id:""
 
       }
@@ -52,6 +54,11 @@ export default {
   methods: {
 
     check_login: function () {
+      if (this.usnm === "" || this.pswd === ""){
+        this.reset_msg()
+        this.no_input = true
+        return 0;
+      }
       
       axios.get('http://localhost:3000/profile?name=' + this.usnm)
       .then((response) => {
@@ -84,6 +91,11 @@ export default {
 
     },
     check_register: function () {
+      if (this.usnm === "" || this.pswd === ""){
+        this.reset_msg()
+        this.no_input = true
+        return 0;
+      }
       axios.get('http://localhost:3000/profile?name=' + this.usnm)
       .then((response) => {
         if (response["data"].length == 1){
@@ -138,6 +150,7 @@ export default {
         this.login_failed_usnm =false
         this.register_failed =false
         this.register_verified =false
+        this.no_input=false
     }
 
 
